@@ -1,0 +1,741 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L dk_Embedded-Microcontrollers:ATMEGA328P-PU U?
+U 1 1 5DABC20D
+P 7300 2550
+F 0 "U?" H 7578 2553 60  0000 L CNN
+F 1 "ATMEGA328P-PU" H 7578 2447 60  0000 L CNN
+F 2 "digikey-footprints:DIP-28_W7.62mm" H 7500 2750 60  0001 L CNN
+F 3 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en608326" H 7500 2850 60  0001 L CNN
+F 4 "ATMEGA328P-PU-ND" H 7500 2950 60  0001 L CNN "Digi-Key_PN"
+F 5 "ATMEGA328P-PU" H 7500 3050 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 7500 3150 60  0001 L CNN "Category"
+F 7 "Embedded - Microcontrollers" H 7500 3250 60  0001 L CNN "Family"
+F 8 "http://www.microchip.com/mymicrochip/filehandler.aspx?ddocname=en608326" H 7500 3350 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/microchip-technology/ATMEGA328P-PU/ATMEGA328P-PU-ND/1914589" H 7500 3450 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC MCU 8BIT 32KB FLASH 28DIP" H 7500 3550 60  0001 L CNN "Description"
+F 11 "Microchip Technology" H 7500 3650 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 7500 3750 60  0001 L CNN "Status"
+	1    7300 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DABD373
+P 7300 900
+F 0 "#PWR?" H 7300 750 50  0001 C CNN
+F 1 "+5V" H 7315 1073 50  0000 C CNN
+F 2 "" H 7300 900 50  0001 C CNN
+F 3 "" H 7300 900 50  0001 C CNN
+	1    7300 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7300 900  7300 1000
+Wire Wire Line
+	7300 1000 7400 1000
+Wire Wire Line
+	7400 1000 7400 1150
+Connection ~ 7300 1000
+Wire Wire Line
+	7300 1000 7300 1150
+Wire Wire Line
+	7300 4050 7300 4200
+Wire Wire Line
+	7300 4200 7400 4200
+Wire Wire Line
+	7400 4200 7400 4050
+Wire Wire Line
+	7400 4200 7400 4400
+Connection ~ 7400 4200
+$Comp
+L power:GND #PWR?
+U 1 1 5DABE1FC
+P 7400 4400
+F 0 "#PWR?" H 7400 4150 50  0001 C CNN
+F 1 "GND" H 7405 4227 50  0000 C CNN
+F 2 "" H 7400 4400 50  0001 C CNN
+F 3 "" H 7400 4400 50  0001 C CNN
+	1    7400 4400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DABED8B
+P 6050 3150
+F 0 "C?" V 5798 3150 50  0000 C CNN
+F 1 "0.1uF" V 5889 3150 50  0000 C CNN
+F 2 "" H 6088 3000 50  0001 C CNN
+F 3 "~" H 6050 3150 50  0001 C CNN
+	1    6050 3150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6200 3150 6800 3150
+Wire Wire Line
+	5900 3150 5650 3150
+Wire Wire Line
+	5650 3150 5650 3350
+$Comp
+L power:GND #PWR?
+U 1 1 5DAC04D0
+P 5650 3350
+F 0 "#PWR?" H 5650 3100 50  0001 C CNN
+F 1 "GND" H 5655 3177 50  0000 C CNN
+F 2 "" H 5650 3350 50  0001 C CNN
+F 3 "" H 5650 3350 50  0001 C CNN
+	1    5650 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DAC199A
+P 7850 1150
+F 0 "C?" H 7735 1104 50  0000 R CNN
+F 1 "0.1uF" H 7735 1195 50  0000 R CNN
+F 2 "" H 7888 1000 50  0001 C CNN
+F 3 "~" H 7850 1150 50  0001 C CNN
+	1    7850 1150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7400 1000 7850 1000
+Connection ~ 7400 1000
+Wire Wire Line
+	7850 1300 7850 1450
+$Comp
+L power:GND #PWR?
+U 1 1 5DAC2AFA
+P 7850 1450
+F 0 "#PWR?" H 7850 1200 50  0001 C CNN
+F 1 "GND" H 7855 1277 50  0000 C CNN
+F 2 "" H 7850 1450 50  0001 C CNN
+F 3 "" H 7850 1450 50  0001 C CNN
+	1    7850 1450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Crystal Y?
+U 1 1 5DAC5A56
+P 5650 2150
+F 0 "Y?" V 5604 2281 50  0000 L CNN
+F 1 "16Mhz" V 5695 2281 50  0000 L CNN
+F 2 "" H 5650 2150 50  0001 C CNN
+F 3 "~" H 5650 2150 50  0001 C CNN
+	1    5650 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6800 2050 6050 2050
+Wire Wire Line
+	6050 2050 6050 1950
+Wire Wire Line
+	6050 1950 5650 1950
+Wire Wire Line
+	5650 1950 5650 2000
+Wire Wire Line
+	6800 2150 6050 2150
+Wire Wire Line
+	6050 2150 6050 2350
+Wire Wire Line
+	6050 2350 5650 2350
+Wire Wire Line
+	5650 2350 5650 2300
+$Comp
+L Device:C C?
+U 1 1 5DAD03AA
+P 5200 1950
+F 0 "C?" V 5452 1950 50  0000 C CNN
+F 1 "20pF" V 5361 1950 50  0000 C CNN
+F 2 "" H 5238 1800 50  0001 C CNN
+F 3 "~" H 5200 1950 50  0001 C CNN
+	1    5200 1950
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DAD0BE7
+P 5200 2350
+F 0 "C?" V 4948 2350 50  0000 C CNN
+F 1 "20pF" V 5039 2350 50  0000 C CNN
+F 2 "" H 5238 2200 50  0001 C CNN
+F 3 "~" H 5200 2350 50  0001 C CNN
+	1    5200 2350
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5350 1950 5650 1950
+Connection ~ 5650 1950
+Wire Wire Line
+	5350 2350 5650 2350
+Connection ~ 5650 2350
+Wire Wire Line
+	5050 1950 4850 1950
+Wire Wire Line
+	4850 2350 5050 2350
+Wire Wire Line
+	4850 1950 4850 2150
+Wire Wire Line
+	4850 2150 4700 2150
+Connection ~ 4850 2150
+Wire Wire Line
+	4850 2150 4850 2350
+Wire Wire Line
+	4700 2150 4700 2450
+$Comp
+L power:GND #PWR?
+U 1 1 5DAD29C0
+P 4700 2450
+F 0 "#PWR?" H 4700 2200 50  0001 C CNN
+F 1 "GND" H 4705 2277 50  0000 C CNN
+F 2 "" H 4700 2450 50  0001 C CNN
+F 3 "" H 4700 2450 50  0001 C CNN
+	1    4700 2450
+	1    0    0    -1  
+$EndComp
+$Comp
+L user-Device:PMS7003 U?
+U 1 1 5DAD4997
+P 1300 2300
+F 0 "U?" H 1083 2565 50  0000 C CNN
+F 1 "PMS7003" H 1083 2474 50  0000 C CNN
+F 2 "" H 1300 2300 50  0001 C CNN
+F 3 "" H 1300 2300 50  0001 C CNN
+	1    1300 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DAE544C
+P 1600 2100
+F 0 "#PWR?" H 1600 1950 50  0001 C CNN
+F 1 "+5V" H 1615 2273 50  0000 C CNN
+F 2 "" H 1600 2100 50  0001 C CNN
+F 3 "" H 1600 2100 50  0001 C CNN
+	1    1600 2100
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1600 2100 1600 2300
+Wire Wire Line
+	1600 2300 1400 2300
+Wire Wire Line
+	1600 2300 1600 2400
+Wire Wire Line
+	1600 2400 1400 2400
+Connection ~ 1600 2300
+$Comp
+L power:GND #PWR?
+U 1 1 5DAE6610
+P 1850 2650
+F 0 "#PWR?" H 1850 2400 50  0001 C CNN
+F 1 "GND" H 1855 2477 50  0000 C CNN
+F 2 "" H 1850 2650 50  0001 C CNN
+F 3 "" H 1850 2650 50  0001 C CNN
+	1    1850 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1400 2500 1850 2500
+Wire Wire Line
+	1850 2500 1850 2600
+Wire Wire Line
+	1400 2600 1850 2600
+Connection ~ 1850 2600
+Wire Wire Line
+	1850 2600 1850 2650
+Wire Wire Line
+	1400 2900 1750 2900
+Wire Wire Line
+	1400 3100 1750 3100
+Wire Wire Line
+	6800 1750 6500 1750
+Wire Wire Line
+	6800 1950 6500 1950
+Text Label 6600 1750 0    50   ~ 0
+A_Rx
+Text Label 6600 1950 0    50   ~ 0
+A_Tx
+$Comp
+L dk_PMIC-Voltage-Regulators-Linear:LP2985-33DBVR U?
+U 1 1 5DAF8F61
+P 5950 5600
+F 0 "U?" H 5950 6103 60  0000 C CNN
+F 1 "LP2985-33DBVR" H 5950 5997 60  0000 C CNN
+F 2 "digikey-footprints:SOT-753" H 6150 5800 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flp2985" H 6150 5900 60  0001 L CNN
+F 4 "296-18476-1-ND" H 6150 6000 60  0001 L CNN "Digi-Key_PN"
+F 5 "LP2985-33DBVR" H 6150 6100 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 6150 6200 60  0001 L CNN "Category"
+F 7 "PMIC - Voltage Regulators - Linear" H 6150 6300 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Flp2985" H 6150 6400 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/LP2985-33DBVR/296-18476-1-ND/809911" H 6150 6500 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC REG LINEAR 3.3V 150MA SOT23-5" H 6150 6600 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 6150 6700 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6150 6800 60  0001 L CNN "Status"
+	1    5950 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 5050 6050 5050
+Wire Wire Line
+	6050 5050 6050 5300
+$Comp
+L power:+5V #PWR?
+U 1 1 5DAFBDA1
+P 5500 5050
+F 0 "#PWR?" H 5500 4900 50  0001 C CNN
+F 1 "+5V" H 5515 5223 50  0000 C CNN
+F 2 "" H 5500 5050 50  0001 C CNN
+F 3 "" H 5500 5050 50  0001 C CNN
+	1    5500 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 5050 5500 5600
+Wire Wire Line
+	5500 5600 5550 5600
+Connection ~ 5500 5050
+Wire Wire Line
+	5950 5900 5950 6050
+$Comp
+L power:GND #PWR?
+U 1 1 5DAFEB2C
+P 5950 6050
+F 0 "#PWR?" H 5950 5800 50  0001 C CNN
+F 1 "GND" H 5955 5877 50  0000 C CNN
+F 2 "" H 5950 6050 50  0001 C CNN
+F 3 "" H 5950 6050 50  0001 C CNN
+	1    5950 6050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DB01D77
+P 6650 5850
+F 0 "C?" H 6765 5896 50  0000 L CNN
+F 1 "1uF" H 6765 5805 50  0000 L CNN
+F 2 "" H 6688 5700 50  0001 C CNN
+F 3 "~" H 6650 5850 50  0001 C CNN
+	1    6650 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 5600 6650 5600
+Wire Wire Line
+	6650 5600 6650 5700
+$Comp
+L power:GND #PWR?
+U 1 1 5DB0860C
+P 6650 6050
+F 0 "#PWR?" H 6650 5800 50  0001 C CNN
+F 1 "GND" H 6655 5877 50  0000 C CNN
+F 2 "" H 6650 6050 50  0001 C CNN
+F 3 "" H 6650 6050 50  0001 C CNN
+	1    6650 6050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6650 6000 6650 6050
+Text Label 6350 5600 0    50   ~ 0
++3V3
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5DB0FC2A
+P 10550 1850
+F 0 "J?" H 10630 1842 50  0000 L CNN
+F 1 "Conn_01x04" H 10630 1751 50  0000 L CNN
+F 2 "" H 10550 1850 50  0001 C CNN
+F 3 "~" H 10550 1850 50  0001 C CNN
+	1    10550 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	10350 1750 10050 1750
+Wire Wire Line
+	10350 1950 10050 1950
+Wire Wire Line
+	10350 2050 10050 2050
+Wire Wire Line
+	10050 1750 10050 1600
+$Comp
+L power:+5V #PWR?
+U 1 1 5DB1626E
+P 10050 1600
+F 0 "#PWR?" H 10050 1450 50  0001 C CNN
+F 1 "+5V" H 10065 1773 50  0000 C CNN
+F 2 "" H 10050 1600 50  0001 C CNN
+F 3 "" H 10050 1600 50  0001 C CNN
+	1    10050 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DB166DB
+P 9700 2050
+F 0 "#PWR?" H 9700 1800 50  0001 C CNN
+F 1 "GND" H 9705 1877 50  0000 C CNN
+F 2 "" H 9700 2050 50  0001 C CNN
+F 3 "" H 9700 2050 50  0001 C CNN
+	1    9700 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 1850 9700 2050
+Wire Wire Line
+	9700 1850 10350 1850
+Text Label 10100 1950 0    50   ~ 0
+SDA
+Text Label 10100 2050 0    50   ~ 0
+SCL
+Wire Wire Line
+	6800 3650 6500 3650
+Wire Wire Line
+	6800 3750 6500 3750
+Text Label 6600 3650 0    50   ~ 0
+SDA
+Text Label 6600 3750 0    50   ~ 0
+SCL
+$Comp
+L dk_USB-DVI-HDMI-Connectors:10118193-0001LF J?
+U 1 1 5DB282E1
+P 1700 5750
+F 0 "J?" H 1764 6495 60  0000 C CNN
+F 1 "10118193-0001LF" H 1764 6389 60  0000 C CNN
+F 2 "digikey-footprints:USB_Micro_B_Female_10118193-0001LF" H 1900 5950 60  0001 L CNN
+F 3 "http://www.amphenol-icc.com/media/wysiwyg/files/drawing/10118193.pdf" H 1900 6050 60  0001 L CNN
+F 4 "609-4616-1-ND" H 1900 6150 60  0001 L CNN "Digi-Key_PN"
+F 5 "10118193-0001LF" H 1900 6250 60  0001 L CNN "MPN"
+F 6 "Connectors, Interconnects" H 1900 6350 60  0001 L CNN "Category"
+F 7 "USB, DVI, HDMI Connectors" H 1900 6450 60  0001 L CNN "Family"
+F 8 "http://www.amphenol-icc.com/media/wysiwyg/files/drawing/10118193.pdf" H 1900 6550 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/amphenol-icc-fci/10118193-0001LF/609-4616-1-ND/2785380" H 1900 6650 60  0001 L CNN "DK_Detail_Page"
+F 10 "CONN RCPT USB2.0 MICRO B SMD R/A" H 1900 6750 60  0001 L CNN "Description"
+F 11 "Amphenol ICC (FCI)" H 1900 6850 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 1900 6950 60  0001 L CNN "Status"
+	1    1700 5750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2000 5950 2050 5950
+Wire Wire Line
+	2200 5950 2200 6150
+$Comp
+L power:GND #PWR?
+U 1 1 5DB2D185
+P 2200 6150
+F 0 "#PWR?" H 2200 5900 50  0001 C CNN
+F 1 "GND" H 2205 5977 50  0000 C CNN
+F 2 "" H 2200 6150 50  0001 C CNN
+F 3 "" H 2200 6150 50  0001 C CNN
+	1    2200 6150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2050 6350 2050 5950
+Wire Wire Line
+	1600 6350 2050 6350
+Connection ~ 2050 5950
+Wire Wire Line
+	2050 5950 2200 5950
+Wire Wire Line
+	2000 5550 2200 5550
+Wire Wire Line
+	2200 5550 2200 5350
+$Comp
+L power:+5V #PWR?
+U 1 1 5DB30940
+P 2200 5350
+F 0 "#PWR?" H 2200 5200 50  0001 C CNN
+F 1 "+5V" H 2215 5523 50  0000 C CNN
+F 2 "" H 2200 5350 50  0001 C CNN
+F 3 "" H 2200 5350 50  0001 C CNN
+	1    2200 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:AVR-ISP-6 J?
+U 1 1 5DB334EF
+P 9200 5450
+F 0 "J?" H 8921 5546 50  0000 R CNN
+F 1 "AVR-ISP-6" H 8921 5455 50  0000 R CNN
+F 2 "" V 8950 5500 50  0001 C CNN
+F 3 " ~" H 7925 4900 50  0001 C CNN
+	1    9200 5450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9100 4800 9100 4950
+Wire Wire Line
+	9100 5850 9100 6100
+$Comp
+L power:GND #PWR?
+U 1 1 5DB386E5
+P 9100 6100
+F 0 "#PWR?" H 9100 5850 50  0001 C CNN
+F 1 "GND" H 9105 5927 50  0000 C CNN
+F 2 "" H 9100 6100 50  0001 C CNN
+F 3 "" H 9100 6100 50  0001 C CNN
+	1    9100 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DB38A85
+P 9100 4800
+F 0 "#PWR?" H 9100 4650 50  0001 C CNN
+F 1 "+5V" H 9115 4973 50  0000 C CNN
+F 2 "" H 9100 4800 50  0001 C CNN
+F 3 "" H 9100 4800 50  0001 C CNN
+	1    9100 4800
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D?
+U 1 1 5DB3C9DF
+P 7400 5100
+F 0 "D?" H 7393 4845 50  0000 C CNN
+F 1 "LED" H 7393 4936 50  0000 C CNN
+F 2 "" H 7400 5100 50  0001 C CNN
+F 3 "~" H 7400 5100 50  0001 C CNN
+	1    7400 5100
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R?
+U 1 1 5DB3DADC
+P 6950 5100
+F 0 "R?" V 6743 5100 50  0000 C CNN
+F 1 "330R" V 6834 5100 50  0000 C CNN
+F 2 "" V 6880 5100 50  0001 C CNN
+F 3 "~" H 6950 5100 50  0001 C CNN
+	1    6950 5100
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 5100 7250 5100
+Wire Wire Line
+	6600 5000 6600 5100
+Wire Wire Line
+	6600 5100 6800 5100
+$Comp
+L power:+5V #PWR?
+U 1 1 5DB414A5
+P 6600 5000
+F 0 "#PWR?" H 6600 4850 50  0001 C CNN
+F 1 "+5V" H 6615 5173 50  0000 C CNN
+F 2 "" H 6600 5000 50  0001 C CNN
+F 3 "" H 6600 5000 50  0001 C CNN
+	1    6600 5000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 5100 7700 5100
+Wire Wire Line
+	7700 5100 7700 5350
+$Comp
+L power:GND #PWR?
+U 1 1 5DB4341F
+P 7700 5350
+F 0 "#PWR?" H 7700 5100 50  0001 C CNN
+F 1 "GND" H 7705 5177 50  0000 C CNN
+F 2 "" H 7700 5350 50  0001 C CNN
+F 3 "" H 7700 5350 50  0001 C CNN
+	1    7700 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2850 6500 2850
+Wire Wire Line
+	6800 2950 6500 2950
+Wire Wire Line
+	6800 3050 6500 3050
+Text Label 6550 2850 0    50   ~ 0
+MOSI
+Text Label 6550 2950 0    50   ~ 0
+MISO
+Text Label 6550 3050 0    50   ~ 0
+SCK
+Wire Wire Line
+	9600 5250 9850 5250
+Wire Wire Line
+	9600 5350 9850 5350
+Wire Wire Line
+	9600 5450 9850 5450
+Text Label 9650 5450 0    50   ~ 0
+SCK
+Text Label 9650 5250 0    50   ~ 0
+MISO
+Text Label 9650 5350 0    50   ~ 0
+MOSI
+$Comp
+L dk_Logic-Translators-Level-Shifters:TXB0108PWR U?
+U 1 1 5DB5EE9A
+P 3300 2650
+F 0 "U?" H 3250 1853 60  0000 C CNN
+F 1 "TXB0108PWR" H 3250 1747 60  0000 C CNN
+F 2 "digikey-footprints:TSSOP-20_W4.4mm" H 3500 2850 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftxb0108" H 3500 2950 60  0001 L CNN
+F 4 "296-21527-1-ND" H 3500 3050 60  0001 L CNN "Digi-Key_PN"
+F 5 "TXB0108PWR" H 3500 3150 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 3500 3250 60  0001 L CNN "Category"
+F 7 "Logic - Translators, Level Shifters" H 3500 3350 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Ftxb0108" H 3500 3450 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/TXB0108PWR/296-21527-1-ND/1305700" H 3500 3550 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC TRNSLTR BIDIRECTIONAL 20TSSOP" H 3500 3650 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 3500 3750 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 3500 3850 60  0001 L CNN "Status"
+	1    3300 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3400 1850 3400 2050
+Wire Wire Line
+	2900 2350 2500 2350
+Wire Wire Line
+	2900 2450 2500 2450
+Wire Wire Line
+	3600 2350 3900 2350
+Wire Wire Line
+	3600 2450 3900 2450
+Text Label 3700 2350 0    50   ~ 0
+A_Rx
+Text Label 3700 2450 0    50   ~ 0
+A_Tx
+Text Label 1450 2900 0    50   ~ 0
+PMS_RX
+Text Label 1450 3100 0    50   ~ 0
+PMS_TXD
+Text Label 2550 2350 0    50   ~ 0
+PMS_TXD
+Text Label 2550 2450 0    50   ~ 0
+PMS_RX
+Wire Wire Line
+	3300 3350 3700 3350
+Wire Wire Line
+	3700 3350 3700 3550
+$Comp
+L power:GND #PWR?
+U 1 1 5DBB61C5
+P 3700 3550
+F 0 "#PWR?" H 3700 3300 50  0001 C CNN
+F 1 "GND" H 3705 3377 50  0000 C CNN
+F 2 "" H 3700 3550 50  0001 C CNN
+F 3 "" H 3700 3550 50  0001 C CNN
+	1    3700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DBB8106
+P 3400 1850
+F 0 "#PWR?" H 3400 1700 50  0001 C CNN
+F 1 "+5V" H 3415 2023 50  0000 C CNN
+F 2 "" H 3400 1850 50  0001 C CNN
+F 3 "" H 3400 1850 50  0001 C CNN
+	1    3400 1850
+	1    0    0    -1  
+$EndComp
+Text Label 3200 2000 1    50   ~ 0
++3V3
+Wire Wire Line
+	1400 2700 1750 2700
+Wire Wire Line
+	1400 3200 1750 3200
+Text Label 1450 2700 0    50   ~ 0
+PMS_RESET
+Text Label 1450 3200 0    50   ~ 0
+PMS_SET
+Text Notes 3050 1550 0    50   ~ 0
+VCCA ≤ VCCB
+Wire Wire Line
+	2900 3150 2500 3150
+Text Label 2750 3150 2    50   ~ 0
++3V3
+Wire Wire Line
+	3600 2550 3900 2550
+Text Label 2550 2550 0    50   ~ 0
+PMS_RESET
+Text Label 2550 2650 0    50   ~ 0
+PMS_SET
+Wire Wire Line
+	3600 2650 3900 2650
+Wire Wire Line
+	6800 2450 6500 2450
+Wire Wire Line
+	6800 2550 6500 2550
+Text Label 6550 2450 0    50   ~ 0
+R_SIG
+Text Label 6550 2550 0    50   ~ 0
+S_SIG
+Text Label 3700 2550 0    50   ~ 0
+R_SIG
+Text Label 3700 2650 0    50   ~ 0
+S_SIG
+Wire Wire Line
+	3200 2000 2250 2000
+Wire Wire Line
+	2250 2000 2250 2150
+$Comp
+L Device:R R?
+U 1 1 5DCAEEA6
+P 2250 2300
+F 0 "R?" H 2180 2254 50  0000 R CNN
+F 1 "10K" H 2180 2345 50  0000 R CNN
+F 2 "" V 2180 2300 50  0001 C CNN
+F 3 "~" H 2250 2300 50  0001 C CNN
+	1    2250 2300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2250 2450 2250 2550
+Wire Wire Line
+	2000 2000 2000 2150
+$Comp
+L Device:R R?
+U 1 1 5DCBA144
+P 2000 2300
+F 0 "R?" H 1930 2254 50  0000 R CNN
+F 1 "10K" H 1930 2345 50  0000 R CNN
+F 2 "" V 1930 2300 50  0001 C CNN
+F 3 "~" H 2000 2300 50  0001 C CNN
+	1    2000 2300
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	2000 2450 2000 2650
+Wire Wire Line
+	2000 2650 2900 2650
+Connection ~ 2250 2000
+Wire Wire Line
+	2250 2550 2900 2550
+Wire Wire Line
+	2000 2000 2250 2000
+Wire Wire Line
+	3200 1750 3200 2000
+Connection ~ 3200 2000
+Wire Wire Line
+	3200 2000 3200 2050
+Wire Wire Line
+	6800 1450 6500 1450
+Text Label 6550 1450 0    50   ~ 0
+RESET
+Wire Wire Line
+	9600 5550 9850 5550
+Text Label 9650 5550 0    50   ~ 0
+RESET
+$EndSCHEMATC

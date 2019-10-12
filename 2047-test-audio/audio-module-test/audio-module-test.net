@@ -1,0 +1,47 @@
+(export (version D)
+  (design
+    (source "C:\\Users\\openfingers3\\Documents\\kiCad projects\\github\\2047-test-audio\\audio-module-test\\audio-module-test.sch")
+    (date "07/10/2019 19:29:08")
+    (tool "Eeschema (5.1.4)-1")
+    (sheet (number 1) (name /) (tstamps /)
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source audio-module-test.sch)
+        (comment (number 1) (value ""))
+        (comment (number 2) (value ""))
+        (comment (number 3) (value ""))
+        (comment (number 4) (value "")))))
+  (components
+    (comp (ref J1)
+      (value AudioJack3)
+      (footprint user-footprints:SJ1-3513N)
+      (datasheet ~)
+      (libsource (lib Connector) (part AudioJack3) (description "Audio Jack, 3 Poles (Stereo / TRS)"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5D9C2343)))
+  (libparts
+    (libpart (lib Connector) (part AudioJack3)
+      (description "Audio Jack, 3 Poles (Stereo / TRS)")
+      (docs ~)
+      (footprints
+        (fp Jack*))
+      (fields
+        (field (name Reference) J)
+        (field (name Value) AudioJack3))
+      (pins
+        (pin (num R) (name ~) (type passive))
+        (pin (num S) (name ~) (type passive))
+        (pin (num T) (name ~) (type passive)))))
+  (libraries
+    (library (logical Connector)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Connector.lib")))
+  (nets
+    (net (code 1) (name "Net-(J1-PadR)")
+      (node (ref J1) (pin R)))
+    (net (code 2) (name "Net-(J1-PadS)")
+      (node (ref J1) (pin S)))
+    (net (code 3) (name "Net-(J1-PadT)")
+      (node (ref J1) (pin T)))))

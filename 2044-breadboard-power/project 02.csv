@@ -1,0 +1,10 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"REF**";"OSHW-Logo_5.7x6mm_SilkScreen";1;"OSHW-Logo_5.7x6mm_SilkScreen";;;
+2;"C1,C3";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";2;"10uF";;;
+3;"C2,C4";"C_0805_2012Metric_Pad1.15x1.40mm_HandSolder";2;"22uF";;;
+4;"D1";"LED_D3.0mm";1;"LED_ALT";;;
+5;"J1,J3";"PinHeader_2x02_P2.54mm_Vertical";2;"Conn_02x02_Odd_Even";;;
+6;"J2";"BarrelJack_CUI_PJ-102AH_Horizontal";1;"Barrel_Jack";;;
+7;"R1";"R_0805_2012Metric_Pad1.15x1.40mm_HandSolder";1;"1K";;;
+8;"U1";"SOT-223-3_TabPin2";1;"AZ1117CH-3.3TRG1";;;
+9;"U2";"SOT-223-3_TabPin2";1;"AZ1117CH-5.0TRG1";;;

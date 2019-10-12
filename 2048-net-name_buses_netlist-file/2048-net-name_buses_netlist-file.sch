@@ -1,0 +1,224 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5D9C2B8E
+P 2150 2800
+F 0 "#FLG?" H 2150 2875 50  0001 C CNN
+F 1 "PWR_FLAG" H 2150 2973 50  0000 C CNN
+F 2 "" H 2150 2800 50  0001 C CNN
+F 3 "~" H 2150 2800 50  0001 C CNN
+	1    2150 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5D9C2F13
+P 2600 3100
+F 0 "#FLG?" H 2600 3175 50  0001 C CNN
+F 1 "PWR_FLAG" H 2600 3273 50  0000 C CNN
+F 2 "" H 2600 3100 50  0001 C CNN
+F 3 "~" H 2600 3100 50  0001 C CNN
+	1    2600 3100
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D9C377F
+P 2150 3100
+F 0 "#PWR?" H 2150 2850 50  0001 C CNN
+F 1 "GND" H 2155 2927 50  0000 C CNN
+F 2 "" H 2150 3100 50  0001 C CNN
+F 3 "" H 2150 3100 50  0001 C CNN
+	1    2150 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5D9C3D19
+P 2600 2800
+F 0 "#PWR?" H 2600 2650 50  0001 C CNN
+F 1 "+5V" H 2615 2973 50  0000 C CNN
+F 2 "" H 2600 2800 50  0001 C CNN
+F 3 "" H 2600 2800 50  0001 C CNN
+	1    2600 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2800 2600 2900
+Wire Wire Line
+	2150 2800 2150 3100
+$Comp
+L power:+5V #PWR?
+U 1 1 5D9C48EF
+P 3650 2600
+F 0 "#PWR?" H 3650 2450 50  0001 C CNN
+F 1 "+5V" H 3665 2773 50  0000 C CNN
+F 2 "" H 3650 2600 50  0001 C CNN
+F 3 "" H 3650 2600 50  0001 C CNN
+	1    3650 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5D9C522D
+P 5600 2600
+F 0 "#PWR?" H 5600 2350 50  0001 C CNN
+F 1 "GND" H 5605 2427 50  0000 C CNN
+F 2 "" H 5600 2600 50  0001 C CNN
+F 3 "" H 5600 2600 50  0001 C CNN
+	1    5600 2600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:Jumper JP?
+U 1 1 5D9C570C
+P 4600 2600
+F 0 "JP?" H 4600 2864 50  0000 C CNN
+F 1 "Jumper" H 4600 2773 50  0000 C CNN
+F 2 "" H 4600 2600 50  0001 C CNN
+F 3 "~" H 4600 2600 50  0001 C CNN
+	1    4600 2600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 2600 4300 2600
+Wire Wire Line
+	4900 2600 5600 2600
+$Comp
+L Device:Jumper JP?
+U 1 1 5D9C76C3
+P 4600 1950
+F 0 "JP?" H 4600 2214 50  0000 C CNN
+F 1 "Jumper" H 4600 2123 50  0000 C CNN
+F 2 "" H 4600 1950 50  0001 C CNN
+F 3 "~" H 4600 1950 50  0001 C CNN
+	1    4600 1950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3650 1950 4300 1950
+Text Label 5150 2600 0    50   ~ 0
+XX
+Text Label 5150 1950 0    50   ~ 0
+XX
+Wire Wire Line
+	4900 1950 5600 1950
+$Comp
+L power:VCC #PWR?
+U 1 1 5D9C974B
+P 2800 2800
+F 0 "#PWR?" H 2800 2650 50  0001 C CNN
+F 1 "VCC" H 2817 2973 50  0000 C CNN
+F 2 "" H 2800 2800 50  0001 C CNN
+F 3 "" H 2800 2800 50  0001 C CNN
+	1    2800 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2600 2900 2800 2900
+Wire Wire Line
+	2800 2900 2800 2800
+Connection ~ 2600 2900
+Wire Wire Line
+	2600 2900 2600 3100
+$Comp
+L power:VCC #PWR?
+U 1 1 5D9CA448
+P 3650 1950
+F 0 "#PWR?" H 3650 1800 50  0001 C CNN
+F 1 "VCC" H 3667 2123 50  0000 C CNN
+F 2 "" H 3650 1950 50  0001 C CNN
+F 3 "" H 3650 1950 50  0001 C CNN
+	1    3650 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5D9CC017
+P 8500 1550
+F 0 "J?" H 8580 1542 50  0000 L CNN
+F 1 "Conn_01x04" H 8580 1451 50  0000 L CNN
+F 2 "" H 8500 1550 50  0001 C CNN
+F 3 "~" H 8500 1550 50  0001 C CNN
+	1    8500 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 1550 8300 1550
+Wire Wire Line
+	7950 1650 8300 1650
+Wire Wire Line
+	7950 1750 8300 1750
+Wire Bus Line
+	5900 1150 6750 1150
+Wire Wire Line
+	7950 1450 8300 1450
+Entry Wire Line
+	7850 1350 7950 1450
+Entry Wire Line
+	7850 1450 7950 1550
+Entry Wire Line
+	7850 1550 7950 1650
+Entry Wire Line
+	7850 1650 7950 1750
+Text Label 6250 1150 0    50   ~ 0
+A[1..4]
+Wire Bus Line
+	6750 1150 6750 1400
+Wire Bus Line
+	6750 1400 5900 1400
+Connection ~ 6750 1150
+Wire Bus Line
+	6750 1150 7850 1150
+Text Label 8050 1450 0    50   ~ 0
+A1
+Text Label 8050 1550 0    50   ~ 0
+A2
+Text Label 8050 1650 0    50   ~ 0
+A3
+Text Label 8050 1750 0    50   ~ 0
+A4
+$Comp
+L Connector_Generic:Conn_01x04 J?
+U 1 1 5D9D133E
+P 8500 2450
+F 0 "J?" H 8580 2442 50  0000 L CNN
+F 1 "Conn_01x04" H 8580 2351 50  0000 L CNN
+F 2 "" H 8500 2450 50  0001 C CNN
+F 3 "~" H 8500 2450 50  0001 C CNN
+	1    8500 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7950 2450 8300 2450
+Wire Wire Line
+	7950 2550 8300 2550
+Wire Wire Line
+	7950 2650 8300 2650
+Wire Wire Line
+	7950 2350 8300 2350
+Text Label 8050 2350 0    50   ~ 0
+A1
+Text Label 8050 2450 0    50   ~ 0
+A2
+Text Label 8050 2550 0    50   ~ 0
+A3
+Text Label 8050 2650 0    50   ~ 0
+A4
+Wire Bus Line
+	7850 1150 7850 1650
+$EndSCHEMATC

@@ -1,0 +1,44 @@
+(export (version D)
+  (design
+    (source "C:\\Users\\openfingers3\\Documents\\kiCad projects\\github\\2049-4layer\\2049-4layer\\2049-4layer.sch")
+    (date "10/10/2019 21:16:42")
+    (tool "Eeschema (5.1.4)-1")
+    (sheet (number 1) (name /) (tstamps /)
+      (title_block
+        (title)
+        (company)
+        (rev)
+        (date)
+        (source 2049-4layer.sch)
+        (comment (number 1) (value ""))
+        (comment (number 2) (value ""))
+        (comment (number 3) (value ""))
+        (comment (number 4) (value "")))))
+  (components
+    (comp (ref C101)
+      (value C)
+      (footprint Capacitor_SMD:CP_Elec_10x7.9)
+      (datasheet ~)
+      (libsource (lib Device) (part C) (description "Unpolarized capacitor"))
+      (sheetpath (names /) (tstamps /))
+      (tstamp 5DAB428B)))
+  (libparts
+    (libpart (lib Device) (part C)
+      (description "Unpolarized capacitor")
+      (docs ~)
+      (footprints
+        (fp C_*))
+      (fields
+        (field (name Reference) C)
+        (field (name Value) C))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive)))))
+  (libraries
+    (library (logical Device)
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Device.lib")))
+  (nets
+    (net (code 1) (name VCC)
+      (node (ref C101) (pin 1)))
+    (net (code 2) (name GND)
+      (node (ref C101) (pin 2)))))

@@ -1,0 +1,25 @@
+Drill report for C:\Users\openfingers3\Documents\kiCad projects\github\2044-breadboard-power\project 02 micro usb.kicad_pcb
+Created on 29/09/2019 17:47:41
+
+Copper Layer Stackup:
+    =============================================================
+    L1 :  F.Cu                      front
+    L2 :  B.Cu                      back
+
+
+Drill file 'project 02 micro usb-PTH.drl' contains
+    plated through holes:
+    =============================================================
+    T1  0.50mm  0.020"  (2 holes)  (with 2 slots)
+    T2  0.55mm  0.022"  (2 holes)  (with 2 slots)
+    T3  0.90mm  0.035"  (2 holes)
+    T4  1.00mm  0.039"  (14 holes)
+
+    Total plated holes count 20
+
+
+Drill file 'project 02 micro usb-NPTH.drl' contains
+    unplated through holes:
+    =============================================================
+
+    Total unplated holes count 0

@@ -1,0 +1,282 @@
+EESchema Schematic File Version 4
+LIBS:2049-multisheet-cache
+LIBS:2045-preamp-pn222a-cache
+LIBS:audio-module-test-cache
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title "Dual Mic Preamp"
+Date "2019-10-10"
+Rev "1"
+Comp "Openfingers Co., Ltd."
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector:AudioJack3 J301
+U 1 1 5D9C2343
+P 3900 3550
+F 0 "J301" H 3882 3875 50  0000 C CNN
+F 1 "AudioJack3" H 3882 3784 50  0000 C CNN
+F 2 "user-footprints:SJ1-3513N" H 3900 3550 50  0001 C CNN
+F 3 "~" H 3900 3550 50  0001 C CNN
+	1    3900 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0302
+U 1 1 5DA8F343
+P 4450 3200
+F 0 "#PWR0302" H 4450 2950 50  0001 C CNN
+F 1 "GND" H 4455 3027 50  0000 C CNN
+F 2 "" H 4450 3200 50  0001 C CNN
+F 3 "" H 4450 3200 50  0001 C CNN
+	1    4450 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3450 4250 3450
+Wire Wire Line
+	4250 3450 4250 3100
+Wire Wire Line
+	4250 3100 4450 3100
+Wire Wire Line
+	4450 3100 4450 3200
+Wire Wire Line
+	4100 3550 4700 3550
+Wire Wire Line
+	4700 3550 4700 3250
+$Comp
+L Device:R R301
+U 1 1 5DA0F40F
+P 4700 3100
+F 0 "R301" H 4770 3146 50  0000 L CNN
+F 1 "10k" H 4770 3055 50  0000 L CNN
+F 2 "" V 4630 3100 50  0001 C CNN
+F 3 "~" H 4700 3100 50  0001 C CNN
+	1    4700 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R302
+U 1 1 5DA0F6F6
+P 6150 3100
+F 0 "R302" H 6220 3146 50  0000 L CNN
+F 1 "10k" H 6220 3055 50  0000 L CNN
+F 2 "" V 6080 3100 50  0001 C CNN
+F 3 "~" H 6150 3100 50  0001 C CNN
+	1    6150 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R305
+U 1 1 5DA0FA6F
+P 6950 3850
+F 0 "R305" H 7020 3896 50  0000 L CNN
+F 1 "100k" H 7020 3805 50  0000 L CNN
+F 2 "" V 6880 3850 50  0001 C CNN
+F 3 "~" H 6950 3850 50  0001 C CNN
+	1    6950 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R304
+U 1 1 5DA8F347
+P 5500 3850
+F 0 "R304" H 5570 3896 50  0000 L CNN
+F 1 "100k" H 5570 3805 50  0000 L CNN
+F 2 "" V 5430 3850 50  0001 C CNN
+F 3 "~" H 5500 3850 50  0001 C CNN
+	1    5500 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C302
+U 1 1 5DA8F348
+P 4850 3650
+F 0 "C302" V 4598 3650 50  0000 C CNN
+F 1 "1uF" V 4689 3650 50  0000 C CNN
+F 2 "" H 4888 3500 50  0001 C CNN
+F 3 "~" H 4850 3650 50  0001 C CNN
+	1    4850 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C303
+U 1 1 5DA8485E
+P 5200 3850
+F 0 "C303" H 5450 3900 50  0000 R CNN
+F 1 "220pF" H 5450 4000 50  0000 R CNN
+F 2 "" H 5238 3700 50  0001 C CNN
+F 3 "~" H 5200 3850 50  0001 C CNN
+	1    5200 3850
+	-1   0    0    1   
+$EndComp
+$Comp
+L dk_Transistors-Bipolar-BJT-Single:PN2222A Q301
+U 1 1 5DA8485F
+P 6050 3650
+F 0 "Q301" H 6238 3703 60  0000 L CNN
+F 1 "PN2222A" H 6238 3597 60  0000 L CNN
+F 2 "digikey-footprints:TO-92-3" H 6250 3850 60  0001 L CNN
+F 3 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=PN2221-2222A.PDF" H 6250 3950 60  0001 L CNN
+F 4 "PN2222ACS-ND" H 6250 4050 60  0001 L CNN "Digi-Key_PN"
+F 5 "PN2222A" H 6250 4150 60  0001 L CNN "MPN"
+F 6 "Discrete Semiconductor Products" H 6250 4250 60  0001 L CNN "Category"
+F 7 "Transistors - Bipolar (BJT) - Single" H 6250 4350 60  0001 L CNN "Family"
+F 8 "https://my.centralsemi.com/get_document.php?cmp=1&mergetype=pd&mergepath=pd&pdf_id=PN2221-2222A.PDF" H 6250 4450 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/central-semiconductor-corp/PN2222A/PN2222ACS-ND/4806937" H 6250 4550 60  0001 L CNN "DK_Detail_Page"
+F 10 "TRANS NPN 40V 0.8A TO-92" H 6250 4650 60  0001 L CNN "Description"
+F 11 "Central Semiconductor Corp" H 6250 4750 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6250 4850 60  0001 L CNN "Status"
+	1    6050 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C301
+U 1 1 5DA8F349
+P 6650 3250
+F 0 "C301" V 6398 3250 50  0000 C CNN
+F 1 "1uF" V 6489 3250 50  0000 C CNN
+F 2 "" H 6688 3100 50  0001 C CNN
+F 3 "~" H 6650 3250 50  0001 C CNN
+	1    6650 3250
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:R R303
+U 1 1 5DA8F34A
+P 5600 3400
+F 0 "R303" H 5670 3446 50  0000 L CNN
+F 1 "100k" H 5670 3355 50  0000 L CNN
+F 2 "" V 5530 3400 50  0001 C CNN
+F 3 "~" H 5600 3400 50  0001 C CNN
+	1    5600 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0305
+U 1 1 5DA84862
+P 6150 4250
+F 0 "#PWR0305" H 6150 4000 50  0001 C CNN
+F 1 "GND" H 6155 4077 50  0000 C CNN
+F 2 "" H 6150 4250 50  0001 C CNN
+F 3 "" H 6150 4250 50  0001 C CNN
+	1    6150 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3650 4700 3650
+Wire Wire Line
+	5000 3650 5200 3650
+Wire Wire Line
+	5600 3550 5600 3650
+Connection ~ 5600 3650
+Wire Wire Line
+	5600 3650 5850 3650
+Wire Wire Line
+	5500 3650 5500 3700
+Connection ~ 5500 3650
+Wire Wire Line
+	5500 3650 5600 3650
+Wire Wire Line
+	5200 3650 5200 3700
+Connection ~ 5200 3650
+Wire Wire Line
+	5200 3650 5500 3650
+Wire Wire Line
+	5200 4000 5200 4250
+Wire Wire Line
+	5500 4000 5500 4250
+Wire Wire Line
+	6150 3850 6150 4250
+Wire Wire Line
+	4700 2950 4700 2800
+Wire Wire Line
+	4700 2800 6150 2800
+Wire Wire Line
+	6150 2800 6150 2950
+Wire Wire Line
+	6150 2800 6150 2550
+Connection ~ 6150 2800
+Wire Wire Line
+	5600 3250 6150 3250
+Wire Wire Line
+	6150 3250 6150 3450
+Connection ~ 6150 3250
+Wire Wire Line
+	6150 3250 6500 3250
+Wire Wire Line
+	6800 3250 6950 3250
+Wire Wire Line
+	6950 3700 6950 3250
+Connection ~ 6950 3250
+Wire Wire Line
+	6950 3250 7350 3250
+$Comp
+L power:GND #PWR0306
+U 1 1 5DA84863
+P 6950 4250
+F 0 "#PWR0306" H 6950 4000 50  0001 C CNN
+F 1 "GND" H 6955 4077 50  0000 C CNN
+F 2 "" H 6950 4250 50  0001 C CNN
+F 3 "" H 6950 4250 50  0001 C CNN
+	1    6950 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 4000 6950 4250
+$Comp
+L power:+12V #PWR0301
+U 1 1 5DA1D9E2
+P 6150 2550
+F 0 "#PWR0301" H 6150 2400 50  0001 C CNN
+F 1 "+12V" H 6165 2723 50  0000 C CNN
+F 2 "" H 6150 2550 50  0001 C CNN
+F 3 "" H 6150 2550 50  0001 C CNN
+	1    6150 2550
+	1    0    0    -1  
+$EndComp
+Text Notes 7850 3200 0    50   ~ 0
+OUT\n
+$Comp
+L power:GND #PWR0304
+U 1 1 5DA8F34C
+P 5500 4250
+F 0 "#PWR0304" H 5500 4000 50  0001 C CNN
+F 1 "GND" H 5505 4077 50  0000 C CNN
+F 2 "" H 5500 4250 50  0001 C CNN
+F 3 "" H 5500 4250 50  0001 C CNN
+	1    5500 4250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0303
+U 1 1 5DA8F34D
+P 5200 4250
+F 0 "#PWR0303" H 5200 4000 50  0001 C CNN
+F 1 "GND" H 5205 4077 50  0000 C CNN
+F 2 "" H 5200 4250 50  0001 C CNN
+F 3 "" H 5200 4250 50  0001 C CNN
+	1    5200 4250
+	1    0    0    -1  
+$EndComp
+Text GLabel 7350 3250 2    50   Output ~ 0
+MIC_OUT1
+$Comp
+L power:PWR_FLAG #FLG?
+U 1 1 5DA9BC21
+P 4450 3100
+F 0 "#FLG?" H 4450 3175 50  0001 C CNN
+F 1 "PWR_FLAG" H 4450 3273 50  0000 C CNN
+F 2 "" H 4450 3100 50  0001 C CNN
+F 3 "~" H 4450 3100 50  0001 C CNN
+	1    4450 3100
+	1    0    0    -1  
+$EndComp
+Connection ~ 4450 3100
+$EndSCHEMATC

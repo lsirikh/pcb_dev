@@ -1,0 +1,8 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TamuraSB2812-12xx
+D Tamura TamuraSB2812-12XX Transformer, single primary, dual secondary
+K tranformer
+$ENDCMP
+#
+#End Doc Library
